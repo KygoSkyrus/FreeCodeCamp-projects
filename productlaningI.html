@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src=
+    "https://kit.fontawesome.com/a6e2755b4d.js" 
+                    crossorigin="anonymous">
+            </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductLanding</title>
+  <style>
+        *{
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+        }
+        body{
+            background-color: #eee;
+            font-style:sans-serif;          
+        }
+        li{
+            list-style-type:none;
+            display:inline;
+        }
+        .nav-link{
+            color: #000;
+            text-decoration: none;
+            padding:0 20px;            
+        }
+        @media screen and (max-width:600px){
+            .nav-link{
+                display: block;
+                width: 100%;
+                position: relative;
+                left: 30px;
+            }
+        }
+        @media screen and (max-width:600px){
+            .logo>img{       
+                width: 100%;
+            }
+        }
+        header{
+            position: fixed;
+            min-height: 75px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #eee;
+            opacity: 1;
+            width: 100%;
+        }
+        .logo{
+            width:60vw;
+        }
+        .logo>img{ 
+            max-width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 20px;
+        }
+        .get{
+           position: relative;
+           top:120px;
+           text-align: center;
+           line-height: 48px;          
+        }       
+        #email{
+            padding:5px 10px;
+            width: 270px;
+            font-size: 14px;
+        }
+        #submit{
+            border: none;
+            background-color: #f1c40f;
+            padding:5px 18px;
+            font-weight: bolder ;
+            font-size: 20px;
+            margin-bottom: 220px;
+        }
+        #working{
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            width: 800px;
+            justify-content: center;
+            align-items: center;
+        }
+        #blah{
+            padding-left: 26px;
+        }
+        @media screen and (max-width:600px) {
+            .blah{
+                overflow: hidden;       
+            }
+            #working{
+                width: 480px;
+            }         
+        }
+        .work{      
+            margin: auto;
+            display: flex;
+            margin-bottom: 40px;     
+        }
+        .icon{
+            margin: 0 25px;
+            color:#ff8c00 ;
+        }
+        .blah{
+            float: left;
+        }
+        iframe{
+            margin-left: auto;
+            margin-right: auto;
+            height:300px;
+            width:500px;
+            display: flex;  
+        }
+        #box{
+            height: fit-content;
+            border: 1px solid black;
+            width: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 20px;
+        }
+        .tenor{
+            padding: 16px 40px;
+            background-color:#dddddd ;
+        }
+        span{
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .mm{
+            margin-bottom:10px;
+        }
+          #btn{
+        background-color: #f1c40f;
+        border: none;
+        width: fit-content;
+        font-size: 16px;
+        margin-top: 20px ;
+        margin-bottom: 15px;
+        padding:7px 20px;
+        }
+        .big{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: fit-content;
+            align-items: space-between;
+        }
+        @media screen and (max-width:600px){
+            .big{
+                flex-direction: column;             
+            }
+            #box{
+                margin-bottom: 10px;
+            }
+            iframe{
+                width: 400px;
+            }          
+        }
+        #footer{
+            height: 100px;
+            background-color: #dddddd;
+            margin-right: auto;
+            margin-left: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-evenly;
+            box-sizing: border-box;
+        }
+        #pri{
+            display: flex;
+            justify-content: flex-end;         
+            padding-right: 210px;          
+        }
+        #pri a{
+            text-decoration: none;
+            color: black;
+        }
+        #copy{
+            padding-right: 210px;       
+        }
+        @media screen and (max-width:600px){
+            #pri{
+                padding-right: 30px;
+            }
+            #copy{
+                padding-right: 30px;
+            }
+        }
+  </style>
+    
+</head>
+<body>
+    <div class="main">
+         <header id="header">
+             <div class="logo">
+                 <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="brand logo">
+            </div>
+            <nav id="nav-bar">
+            <ul>
+              <li><a class="nav-link" href="#working">Features</a></li>
+              <li><a class="nav-link" href="#video">How it works</a></li>
+              <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+            </nav>
+         </header> 
+
+         <div class="get">
+             <h2>Handcrafted, home-made masterpieces</h2>
+             <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+                 <input id="email" type="email" name="email" placeholder="Enter your email address"required>
+                <br>
+                 <input id="submit" type="submit" value="GET STARTED">
+
+             </form>
+         </div>
+   <div id="working">
+      <div class="work">
+            <div class="icon">
+                 <i class="fas fa-fire fa-3x"></i><!--fa-3x is for icon's size-->
+           </div>
+            <div class="blah" id="blah">
+                 <h2>Premium Materials</h2>
+                 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+           </div> 
+    </div>
+     
+       <div class="work">
+            <div class="icon">
+                 <i class="fas fa-truck fa-3x"></i>          
+           </div>
+           <div class="blah">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+           </div>
+        </div>
+
+        <div class="work">
+            <div class="icon">
+                 <i class="fa fa-battery-full fa-3x"></i>
+            </div>
+            <div class="blah">            
+                 <h2>Quality Assurance</h2>
+                 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+            </div>
+        </div> 
+     </div>
+
+
+<iframe id="video" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>  
+
+<div id="pricing" class="big">
+<div id="box">
+    <div class="tenor">
+        <b>TENOR TRUMBONE</b> 
+    </div>
+    <span>$600</span>
+    <div class="mm">Lorem ipsum.</div>
+    <div class="mm">Lorem ipsum.</div>
+    <div class="mm">Lorem ipsum dolor.</div>
+    <div class="mm">Lorem ipsum.</div>
+    <div><button id="btn" value="SELECT">SELECT</button></div>
+</div>
+
+
+
+<div id="box">
+    <div class="tenor">
+        <b>BASS TRUMBONE</b> 
+    </div>
+    <span>$900</span>
+    <div class="mm">Lorem ipsum.</div>
+    <div class="mm">Lorem ipsum.</div>
+    <div class="mm">Lorem ipsum dolor.</div>
+    <div class="mm">Lorem ipsum.</div>
+    <div><button id="btn" value="SELECT">SELECT</button></div>
+</div>
+
+
+
+<div id="box">
+    <div class="tenor">
+        <b>TENOR TRUMBONE</b> 
+    </div>
+    <span>$1200</span>
+    <div class="mm">Plays similar to a Trumpet</div>
+    <div class="mm">Great for Jazz Bands</div>
+    <div class="mm">Lorem ipsum dolor.</div>
+    <div class="mm">Lorem ipsum.</div>
+    <div><button id="btn" value="SELECT">SELECT</button></div>
+</div>
+
+</div>
+
+
+<footer id="footer">
+    <div id="pri">
+        <a href="#" >Privacy</a>
+        <a href="#"> Terms</a>
+        <a href="#" >Contact</a>
+    </div>
+    <div id="copy">
+        Copyright 2016, Original Trombones
+    </div>
+</footer>
+
+
+
+</body>
+</html>
